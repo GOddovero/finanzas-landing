@@ -1,0 +1,64 @@
+<svg width="600" height="400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Fondo -->
+  <rect width="600" height="400" fill="#f8f9fa" />
+  
+  <!-- Gráfico de líneas -->
+  <path d="M50,300 L100,250 L150,280 L200,180 L250,220 L300,150 L350,100 L400,130 L450,80 L500,120 L550,50" 
+        stroke="#2c74b3" 
+        stroke-width="4" 
+        fill="none" />
+  
+  <!-- Área bajo la curva -->
+  <path d="M50,300 L100,250 L150,280 L200,180 L250,220 L300,150 L350,100 L400,130 L450,80 L500,120 L550,50 L550,300 L50,300" 
+        fill="#2c74b3" 
+        fill-opacity="0.1" />
+  
+  <!-- Puntos de datos -->
+  <circle cx="50" cy="300" r="6" fill="#0a2647" />
+  <circle cx="100" cy="250" r="6" fill="#0a2647" />
+  <circle cx="150" cy="280" r="6" fill="#0a2647" />
+  <circle cx="200" cy="180" r="6" fill="#0a2647" />
+  <circle cx="250" cy="220" r="6" fill="#0a2647" />
+  <circle cx="300" cy="150" r="6" fill="#0a2647" />
+  <circle cx="350" cy="100" r="6" fill="#0a2647" />
+  <circle cx="400" cy="130" r="6" fill="#0a2647" />
+  <circle cx="450" cy="80" r="6" fill="#0a2647" />
+  <circle cx="500" cy="120" r="6" fill="#0a2647" />
+  <circle cx="550" cy="50" r="6" fill="#0a2647" />
+  
+  <!-- Indicadores de crecimiento -->
+  <path d="M200,170 L220,150" stroke="#0a2647" stroke-width="2" />
+  <polygon points="220,140 230,155 210,155" fill="#0a2647" />
+  
+  <path d="M350,90 L370,70" stroke="#0a2647" stroke-width="2" />
+  <polygon points="370,60 380,75 360,75" fill="#0a2647" />
+  
+  <path d="M500,110 L520,90" stroke="#0a2647" stroke-width="2" />
+  <polygon points="520,80 530,95 510,95" fill="#0a2647" />
+  
+  <!-- Líneas de grid -->
+  <line x1="50" y1="50" x2="50" y2="300" stroke="#dee2e6" stroke-width="1" />
+  <line x1="50" y1="300" x2="550" y2="300" stroke="#dee2e6" stroke-width="1" />
+  <line x1="50" y1="250" x2="550" y2="250" stroke="#dee2e6" stroke-width="1" stroke-dasharray="5,5" />
+  <line x1="50" y1="200" x2="550" y2="200" stroke="#dee2e6" stroke-width="1" stroke-dasharray="5,5" />
+  <line x1="50" y1="150" x2="550" y2="150" stroke="#dee2e6" stroke-width="1" stroke-dasharray="5,5" />
+  <line x1="50" y1="100" x2="550" y2="100" stroke="#dee2e6" stroke-width="1" stroke-dasharray="5,5" />
+  <line x1="50" y1="50" x2="550" y2="50" stroke="#dee2e6" stroke-width="1" stroke-dasharray="5,5" />
+  
+  <!-- Elementos de UI financiera -->
+  <rect x="400" y="180" width="150" height="100" rx="10" fill="white" stroke="#dee2e6" stroke-width="1" />
+  <rect x="410" y="200" width="130" height="15" rx="3" fill="#f8f9fa" />
+  <rect x="410" y="225" width="90" height="15" rx="3" fill="#f8f9fa" />
+  <rect x="410" y="250" width="60" height="15" rx="3" fill="#205295" />
+  
+  <rect x="80" y="330" width="120" height="50" rx="5" fill="white" stroke="#dee2e6" stroke-width="1" />
+  <rect x="90" y="345" width="40" height="8" rx="2" fill="#205295" />
+  <rect x="90" y="360" width="100" height="8" rx="2" fill="#f8f9fa" />
+  
+  <!-- Iconos abstractos financieros -->
+  <circle cx="450" cy="40" r="25" fill="#144272" fill-opacity="0.7" />
+  <text x="450" y="48" font-family="Arial" font-size="24" font-weight="bold" fill="white" text-anchor="middle">$</text>
+  
+  <circle cx="70" cy="100" r="20" fill="#205295" fill-opacity="0.7" />
+  <text x="70" y="108" font-family="Arial" font-size="20" font-weight="bold" fill="white" text-anchor="middle">%</text>
+</svg>

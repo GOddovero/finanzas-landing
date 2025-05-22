@@ -1,0 +1,32 @@
+<svg width="600" height="400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="400" fill="#f8f9fa"/>
+  
+  <!-- Fondo -->
+  <rect x="20" y="20" width="560" height="360" rx="10" fill="#0a2647" fill-opacity="0.05"/>
+  
+  <!-- Figuras abstractas representando personas -->
+  <circle cx="150" cy="180" r="60" fill="#0a2647"/>
+  <rect x="130" y="250" width="40" height="100" rx="10" fill="#0a2647"/>
+  
+  <circle cx="300" cy="150" r="60" fill="#144272"/>
+  <rect x="280" y="220" width="40" height="130" rx="10" fill="#144272"/>
+  
+  <circle cx="450" cy="180" r="60" fill="#205295"/>
+  <rect x="430" y="250" width="40" height="100" rx="10" fill="#205295"/>
+  
+  <!-- Detalles faciales abstractos -->
+  <circle cx="130" cy="165" r="10" fill="white"/>
+  <circle cx="170" cy="165" r="10" fill="white"/>
+  <path d="M130,200 Q150,220 170,200" fill="none" stroke="white" stroke-width="3"/>
+  
+  <circle cx="280" cy="135" r="10" fill="white"/>
+  <circle cx="320" cy="135" r="10" fill="white"/>
+  <path d="M280,170 Q300,190 320,170" fill="none" stroke="white" stroke-width="3"/>
+  
+  <circle cx="430" cy="165" r="10" fill="white"/>
+  <circle cx="470" cy="165" r="10" fill="white"/>
+  <path d="M430,200 Q450,220 470,200" fill="none" stroke="white" stroke-width="3"/>
+  
+  <!-- Texto del equipo -->
+  <text x="300" y="380" font-family="Arial" font-size="24" font-weight="bold" fill="#0a2647" text-anchor="middle">Equipo FinancePro</text>
+</svg>

@@ -1,0 +1,16 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#f8f9fa"/>
+  <rect x="50" y="50" width="300" height="200" rx="10" fill="#0a2647" fill-opacity="0.1"/>
+  
+  <!-- Gráfico de barras -->
+  <rect x="100" y="180" width="40" height="40" fill="#0a2647"/>
+  <rect x="150" y="150" width="40" height="70" fill="#144272"/>
+  <rect x="200" y="120" width="40" height="100" fill="#205295"/>
+  <rect x="250" y="90" width="40" height="130" fill="#2c74b3"/>
+  
+  <!-- Línea de tendencia -->
+  <line x1="120" y1="160" x2="270" y2="100" stroke="#ff5722" stroke-width="3" stroke-dasharray="5,5"/>
+  
+  <!-- Título del proyecto -->
+  <text x="200" y="250" font-family="Arial" font-size="16" font-weight="bold" fill="#0a2647" text-anchor="middle">Optimización de Cartera</text>
+</svg>
