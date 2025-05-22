@@ -1,0 +1,742 @@
+/* Efectos Parallax y diseño innovador */
+.parallax-section {
+    position: relative;
+    overflow: hidden;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-layer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    will-change: transform;
+}
+
+/* Efecto de profundidad y perspectiva 3D */
+.perspective-container {
+    perspective: 1000px;
+    transform-style: preserve-3d;
+}
+
+/* Elementos flotantes */
+.floating-element {
+    position: absolute;
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Diseño no convencional */
+.diagonal-section {
+    position: relative;
+    transform: skewY(-5deg);
+    padding: 150px 0;
+    margin: 50px 0;
+    overflow: hidden;
+}
+
+.diagonal-section > .container {
+    transform: skewY(5deg);
+}
+
+/* Efecto de glassmorphism */
+.glass-card {
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    padding: 30px;
+    transition: all 0.3s ease;
+}
+
+.glass-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    background: rgba(255, 255, 255, 0.35);
+}
+
+/* Visualización de datos creativa */
+.circular-progress {
+    position: relative;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background: conic-gradient(var(--accent-color) var(--percentage), #e6e6e6 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(-90deg);
+}
+
+.circular-progress::before {
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: white;
+}
+
+.circular-data {
+    position: absolute;
+    transform: rotate(90deg);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.circular-value {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.circular-label {
+    font-size: 0.9rem;
+    color: var(--light-text);
+}
+
+/* Elementos interactivos no convencionales */
+.interactive-tabs {
+    display: flex;
+    position: relative;
+    background: var(--light-gray);
+    border-radius: 50px;
+    padding: 5px;
+    margin-bottom: 40px;
+}
+
+.tab-selector {
+    position: absolute;
+    height: 100%;
+    z-index: 1;
+    border-radius: 50px;
+    transition: 0.3s ease-out;
+    background: var(--primary-color);
+}
+
+.tab-item {
+    position: relative;
+    z-index: 2;
+    flex: 1;
+    text-align: center;
+    padding: 15px 20px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-weight: 500;
+}
+
+.tab-item.active {
+    color: white;
+}
+
+/* Timeline vertical no convencional */
+.story-timeline {
+    position: relative;
+    padding: 50px 0;
+}
+
+.timeline-line {
+    position: absolute;
+    width: 4px;
+    background: var(--accent-color);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.timeline-content {
+    width: 45%;
+    position: relative;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    background: white;
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+    margin-left: auto;
+}
+
+.timeline-content::after {
+    content: '';
+    position: absolute;
+    top: 30px;
+    width: 20px;
+    height: 20px;
+    background: var(--accent-color);
+    border-radius: 50%;
+}
+
+.timeline-item:nth-child(odd) .timeline-content::after {
+    right: -40px;
+}
+
+.timeline-item:nth-child(even) .timeline-content::after {
+    left: -40px;
+}
+
+/* Gráfico 3D flotante y moderno */
+.dynamic-chart {
+    position: relative;
+    height: 300px;
+    perspective: 1000px;
+    margin: 30px auto;
+}
+
+.chart-bar {
+    position: absolute;
+    bottom: 0;
+    width: 30px;
+    background: linear-gradient(to top, var(--primary-color), var(--accent-color));
+    border-radius: 5px 5px 0 0;
+    transform-style: preserve-3d;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: height 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.chart-label {
+    position: absolute;
+    bottom: -30px;
+    width: 100%;
+    text-align: center;
+    font-size: 0.8rem;
+    color: var(--light-text);
+    transform: translateX(-50%);
+}
+
+.chart-value {
+    position: absolute;
+    top: -25px;
+    width: 100%;
+    text-align: center;
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: var(--primary-color);
+    transform: translateX(-50%);
+}
+
+/* Diseño de mercado de datos no convencional */
+.market-data-creative {
+    background: linear-gradient(120deg, #0a2647, #144272);
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.market-data-creative::before {
+    content: '';
+    position: absolute;
+    width: 150%;
+    height: 150%;
+    top: -25%;
+    left: -25%;
+    background: radial-gradient(circle, rgba(44, 116, 179, 0.2) 0%, rgba(10, 38, 71, 0) 70%);
+    animation: pulse 15s infinite linear;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 0.5;
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 0.8;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0.5;
+    }
+}
+
+.currency-creative-box {
+    border-radius: 20px;
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.currency-creative-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    z-index: -1;
+    border-radius: 20px;
+}
+
+.currency-main-value {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 10px;
+    background: linear-gradient(90deg, #fff, #a3c9ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.market-data-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.currency-ticker {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    padding: 15px 0;
+    margin: 30px 0;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.ticker-items {
+    display: inline-block;
+    animation: ticker 30s linear infinite;
+    padding-right: 100%;
+}
+
+@keyframes ticker {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.ticker-item {
+    display: inline-block;
+    margin-right: 50px;
+    font-weight: 500;
+}
+
+.ticker-value {
+    font-weight: 700;
+    margin-left: 10px;
+}
+
+.ticker-value.up {
+    color: #38b000;
+}
+
+.ticker-value.down {
+    color: #d00000;
+}
+
+/* Sección de clientes innovadora */
+.clients-hexagrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 30px;
+    padding: 20px;
+}
+
+.hexagon-item {
+    position: relative;
+    width: 100%;
+    padding-bottom: 115%; /* Para mantener la proporción del hexágono */
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    transition: all 0.3s ease;
+    transform-origin: center;
+}
+
+.hexagon-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 10%;
+    transition: all 0.3s ease;
+    border: 4px solid rgba(44, 116, 179, 0.15);
+}
+
+.hexagon-item:hover {
+    transform: scale(1.05);
+}
+
+/* Nuevo diseño de portfolio con enfoque storytelling */
+.story-portfolio {
+    position: relative;
+    padding: 80px 0;
+}
+
+.story-section {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.story-divider {
+    position: relative;
+    height: 150px;
+    overflow: hidden;
+}
+
+.story-divider svg {
+    position: absolute;
+    width: 100%;
+    height: 150px;
+}
+
+.story-section:nth-child(odd) {
+    text-align: right;
+}
+
+.story-section:nth-child(even) {
+    text-align: left;
+}
+
+.story-title {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    position: relative;
+    display: inline-block;
+}
+
+.story-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    height: 3px;
+    width: 80px;
+    background: var(--accent-color);
+}
+
+.story-section:nth-child(odd) .story-title::after {
+    right: 0;
+}
+
+.story-content {
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+.story-challenge {
+    font-style: italic;
+    color: var(--light-text);
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+.story-solution {
+    font-weight: 500;
+    color: var(--accent-color);
+    margin-bottom: 30px;
+    font-size: 1.2rem;
+}
+
+.story-metrics {
+    display: flex;
+    gap: 30px;
+    margin: 30px 0;
+}
+
+.story-section:nth-child(odd) .story-metrics {
+    justify-content: flex-end;
+}
+
+.story-metric {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    width: 150px;
+}
+
+.metric-value {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--accent-color);
+}
+
+.metric-label {
+    font-size: 0.9rem;
+    color: var(--light-text);
+}
+
+/* Cursores personalizados */
+.custom-cursor-area {
+    cursor: none;
+    position: relative;
+}
+
+.cursor {
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--accent-color);
+    border-radius: 50%;
+    position: absolute;
+    transition-duration: 200ms;
+    transition-timing-function: ease-out;
+    animation: cursorAnim .5s infinite alternate;
+    pointer-events: none;
+    z-index: 1000;
+}
+
+.cursor::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    border: 8px solid var(--primary-color);
+    border-radius: 50%;
+    opacity: .5;
+    top: -8px;
+    left: -8px;
+    animation: cursorAnim2 .5s infinite alternate;
+}
+
+@keyframes cursorAnim {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(.7);
+    }
+}
+
+@keyframes cursorAnim2 {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(.4);
+    }
+}
+
+@keyframes cursorAnim3 {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(3);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+
+.expand {
+    animation: cursorAnim3 .5s forwards;
+    border: 1px solid var(--accent-color);
+}
+
+/* Efecto de revelación de text */
+.reveal-text {
+    position: relative;
+    color: transparent;
+    white-space: normal;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+    line-height: 1.3;
+    margin-bottom: 20px;
+}
+
+.reveal-text::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: var(--text-color);
+    overflow: hidden;
+    border-right: 3px solid var(--accent-color);
+    white-space: normal;
+}
+    animation: typing 3s steps(30) 1s forwards;
+    white-space: nowrap;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+        border-right: 0;
+    }
+}
+
+/* Botones innovadores con efecto magnético */
+.magnetic-btn {
+    position: relative;
+    border: none;
+    background: transparent;
+    padding: 15px 30px;
+    margin: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.magnetic-btn::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: var(--primary-color);
+    z-index: -1;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.magnetic-btn:hover::before {
+    transform: scale(1.1);
+    filter: blur(3px);
+}
+
+.magnetic-btn span {
+    color: white;
+    z-index: 2;
+}
+
+/* Forma geométrica con animación */
+.geometric-shape {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(45deg, rgba(32, 82, 149, 0.5), rgba(44, 116, 179, 0.2));
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    animation: morphing 10s ease-in-out infinite;
+}
+
+@keyframes morphing {
+    0% {
+        border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    }
+    25% {
+        border-radius: 58% 42% 75% 25% / 76% 46% 54% 24%;
+    }
+    50% {
+        border-radius: 50% 50% 33% 67% / 55% 27% 73% 45%;
+    }
+    75% {
+        border-radius: 33% 67% 58% 42% / 63% 68% 32% 37%;
+    }
+    100% {
+        border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    }
+}
+
+/* Responsive para los nuevos elementos */
+@media screen and (max-width: 991px) {
+    .timeline-line {
+        left: 20px;
+    }
+    
+    .timeline-content {
+        width: calc(100% - 50px);
+        margin-left: 50px !important;
+    }
+    
+    .timeline-item:nth-child(odd) .timeline-content::after,
+    .timeline-item:nth-child(even) .timeline-content::after {
+        left: -30px;
+    }
+    
+    .story-content {
+        max-width: 100%;
+    }
+    
+    .story-section:nth-child(odd),
+    .story-section:nth-child(even) {
+        text-align: center;
+    }
+    
+    .story-section:nth-child(odd) .story-title::after,
+    .story-section:nth-child(even) .story-title::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .story-section:nth-child(odd) .story-metrics,
+    .story-section:nth-child(even) .story-metrics {
+        justify-content: center;
+    }
+    
+    .diagonal-section {
+        transform: skewY(-2deg);
+    }
+    
+    .diagonal-section > .container {
+        transform: skewY(2deg);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .circular-progress {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .circular-progress::before {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .story-metrics {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .interactive-tabs {
+        flex-direction: column;
+        border-radius: 10px;
+    }
+    
+    .tab-item {
+        padding: 10px;
+    }
+    
+    .tab-selector {
+        border-radius: 10px;
+    }
+}

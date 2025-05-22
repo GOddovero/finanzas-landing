@@ -2,15 +2,15 @@
 :root {
     --primary-color: #0a2647;
     --secondary-color: #144272;
-    --accent-color: #205295;
+    --accent-color: #205295; 
     --light-accent: #2c74b3;
-    --text-color: #333;
-    --light-text: #777;
+    --text-color: #333; /* Mantenido para texto oscuro sobre fondos claros */
+    --light-text: #555; /* Oscurecido ligeramente para mejor contraste */
     --white: #fff;
     --light-gray: #f8f9fa;
     --mid-gray: #e9ecef;
-    --dark-gray: #6c757d;
-    --border-color: #dee2e6;
+    --dark-gray: #495057; /* Oscurecido para mejor contraste */
+    --border-color: #ced4da; /* Oscurecido para mejor contraste */
     --success-color: #38b000;
     --danger-color: #d00000;
     --box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
@@ -101,6 +101,7 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
     margin-bottom: 20px;
+    color: var(--text-color); /* Asegurar que el texto de párrafo general use el color base */
 }
 
 img {
@@ -133,7 +134,7 @@ section {
 
 .section-subtitle {
     font-size: 1.1rem;
-    color: var(--light-text);
+    color: var(--light-text); /* Usar el light-text ajustado */
     margin-bottom: 40px;
     max-width: 700px;
 }
@@ -304,12 +305,13 @@ body.menu-open {
     font-size: 3rem;
     margin-bottom: 20px;
     line-height: 1.2;
+    white-space: normal; /* Permite el ajuste de línea automático */
 }
 
 .hero-content p {
     font-size: 1.1rem;
     margin-bottom: 30px;
-    color: var(--light-text);
+    color: var(--light-text); /* Usar el light-text ajustado */
 }
 
 .hero-buttons {
@@ -355,6 +357,10 @@ body.menu-open {
     font-size: 1.4rem;
 }
 
+.market-card p { /* Asumiendo que hay texto 'p' dentro de market-card que necesita contraste */
+    color: var(--text-color);
+}
+
 .market-items {
     display: flex;
     flex-direction: column;
@@ -375,10 +381,12 @@ body.menu-open {
 
 .market-name {
     font-weight: 500;
+    color: var(--text-color); /* Asegurar contraste */
 }
 
 .market-value {
     font-weight: 700;
+    color: var(--primary-color); /* Asegurar contraste */
 }
 
 .market-change {
@@ -429,7 +437,7 @@ body.menu-open {
 
 .currency-label {
     font-size: 1.1rem;
-    color: var(--dark-gray);
+    color: var(--dark-gray); /* Usar dark-gray ajustado */
 }
 
 .currency-alt {
@@ -449,16 +457,18 @@ body.menu-open {
 
 .currency-name {
     font-weight: 500;
+    color: var(--text-color); /* Asegurar contraste */
 }
 
 .currency-alt-value {
     font-weight: 700;
+    color: var(--primary-color); /* Asegurar contraste */
 }
 
 .market-disclaimer {
     text-align: center;
     font-size: 0.9rem;
-    color: var(--light-text);
+    color: var(--light-text); /* Usar el light-text ajustado */
     margin-top: 30px;
 }
 
@@ -518,7 +528,7 @@ body.menu-open {
 
 .portfolio-content p {
     margin-bottom: 20px;
-    color: var(--light-text);
+    color: var(--light-text); /* Usar el light-text ajustado */
 }
 
 .portfolio-link {
@@ -549,6 +559,7 @@ body.menu-open {
 .clients .section-subtitle {
     text-align: center;
     margin: 0 auto 50px;
+    color: var(--light-text); /* Usar el light-text ajustado */
 }
 
 .clients-logo-grid {
@@ -610,6 +621,7 @@ body.menu-open {
     position: relative;
     z-index: 1;
     font-style: italic;
+    color: var(--text-color); /* Asegurar contraste */
 }
 
 .testimonial-author {
@@ -631,7 +643,7 @@ body.menu-open {
 }
 
 .testimonial-author span {
-    color: var(--light-text);
+    color: var(--light-text); /* Usar el light-text ajustado */
     font-size: 0.9rem;
 }
 
@@ -675,7 +687,7 @@ body.menu-open {
 }
 
 .stat-label {
-    color: var(--light-text);
+    color: var(--light-text); /* Usar el light-text ajustado */
 }
 
 .services h3 {
@@ -745,7 +757,7 @@ body.menu-open {
 }
 
 .service-card p {
-    color: var(--light-text);
+    color: var(--light-text); /* Usar el light-text ajustado */
     font-size: 0.95rem;
 }
 
@@ -761,6 +773,7 @@ body.menu-open {
 .contact .section-subtitle {
     text-align: center;
     margin: 0 auto 50px;
+    color: var(--light-text); /* Usar el light-text ajustado */
 }
 
 .contact-container {
@@ -786,6 +799,10 @@ body.menu-open {
 .info-item h4 {
     margin-bottom: 5px;
     font-size: 1.2rem;
+}
+
+.info-item p {
+    color: var(--text-color); /* Asegurar contraste */
 }
 
 .social-links {
@@ -875,7 +892,7 @@ input:focus, textarea:focus {
 }
 
 .footer-logo p {
-    color: var(--mid-gray);
+    color: var(--mid-gray); /* Mantener un gris claro sobre fondo oscuro */
 }
 
 .footer-links {
@@ -894,7 +911,7 @@ input:focus, textarea:focus {
 }
 
 .footer-column ul li a {
-    color: var(--mid-gray);
+    color: var(--mid-gray); /* Mantener un gris claro sobre fondo oscuro */
     transition: var(--transition);
 }
 
@@ -910,7 +927,7 @@ input:focus, textarea:focus {
 }
 
 .footer-bottom p {
-    color: var(--mid-gray);
+    color: var(--mid-gray); /* Mantener un gris claro sobre fondo oscuro */
     font-size: 0.9rem;
 }
 
@@ -1056,4 +1073,14 @@ input:focus, textarea:focus {
     .hero-content h1 {
         font-size: 2.2rem;
     }
+}
+
+.clients-hexagrid .hexagon-item {
+    background-color: var(--light-accent); /* Cambiado a azul claro para mayor visibilidad */
+}
+
+.clients-hexagrid .hexagon-item img {
+    max-width: 85%; /* Ajusta el tamaño si es necesario */
+    height: auto;
+    filter: brightness(0) invert(1); /* Invierte colores de la imagen si son oscuros sobre fondo azul */
 }

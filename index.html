@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FinancePro - Soluciones Financieras</title>
-    <link rel="stylesheet" href="styles/styles.css">
+    <title>Bero Capital - Asesoramiento personalizado que marca la diferencia</title>    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/parallax.css">
+    <link rel="stylesheet" href="styles/bero-styles.css">
+    <link rel="stylesheet" href="styles/team-styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,17 +23,15 @@
 
     <header class="header">
         <div class="container">
-            <nav class="navbar">
-                <div class="logo">
-                    <a href="#"><span class="highlight">Finance</span>Pro</a>
+            <nav class="navbar">                <div class="logo">
+                    <a href="#"><span class="highlight">Bero</span> Capital</a>
                 </div>
-                <ul class="nav-menu">
-                    <li><a href="#inicio" class="nav-link">Inicio</a></li>
-                    <li><a href="#mercado" class="nav-link">Mercado</a></li>
-                    <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
-                    <li><a href="#clientes" class="nav-link">Clientes</a></li>
-                    <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
-                    <li><a href="#contacto" class="nav-link">Contacto</a></li>
+                <ul class="nav-menu">                    <li><a href="#inicio" class="nav-link">Home</a></li>
+                    <li><a href="#servicios" class="nav-link">Services</a></li>
+                    <li><a href="#nosotros" class="nav-link">About Us</a></li>
+                    <li><a href="#equipo" class="nav-link">Equipo</a></li>
+                    <li><a href="#partners" class="nav-link">Partners</a></li>
+                    <li><a href="#contacto" class="nav-link">Contact</a></li>
                 </ul>
                 <div class="hamburger">
                     <span class="bar"></span>
@@ -40,242 +40,389 @@
                 </div>
             </nav>
         </div>
-    </header>
-
-    <!-- Sección Hero -->
-    <section id="inicio" class="hero">
+    </header>    <!-- Sección Hero innovadora con parallax -->
+    <section id="inicio" class="hero parallax-section">
+        <div class="parallax-layer" data-speed="0.2" data-direction="-1"></div>
+        <div class="parallax-layer" data-speed="0.1" data-direction="1">
+            <div class="geometric-shape" style="top: 20%; left: 10%;"></div>
+            <div class="geometric-shape" style="bottom: 10%; right: 15%; width: 200px; height: 200px; opacity: 0.7;"></div>
+        </div>
         <div class="container">
-            <div class="hero-content">
-                <h1>Soluciones financieras <span class="highlight">inteligentes</span> para un futuro próspero</h1>
-                <p>Ofrecemos asesoramiento financiero personalizado y estrategias de inversión de alto rendimiento para individuos y empresas que buscan maximizar su potencial financiero.</p>
+            <div class="hero-content perspective-container">                <h1 class="reveal-text" data-text="Asesoramiento personalizado que marca la diferencia">
+                    Asesoramiento personalizado que <span class="highlight">marca la diferencia</span>
+                </h1>
+                <p>Soluciones a medida para alcanzar tus objetivos financieros. En Bero Capital nos convertimos en tu aliado estratégico, acompañándote en cada paso hacia tus metas financieras.</p>
                 <div class="hero-buttons">
-                    <a href="#contacto" class="btn btn-primary">Comenzar ahora</a>
+                    <a href="#contacto" class="magnetic-btn"><span>Contactanos</span></a>
                     <a href="#nosotros" class="btn btn-secondary">Conoce más</a>
                 </div>
+                
+                <div class="floating-element" style="bottom: -30px; right: 20%; width: 50px; height: 50px;">
+                    <i class="fas fa-chart-line" style="font-size: 3rem; color: var(--accent-color); opacity: 0.7;"></i>
+                </div>
             </div>
-            <div class="hero-image">
+            <div class="hero-image custom-cursor-area">
+                <div class="floating-element" style="top: 10%; left: 10%;">
+                    <i class="fas fa-dollar-sign" style="font-size: 2rem; color: var(--accent-color); opacity: 0.5;"></i>
+                </div>
+                <div class="floating-element" style="bottom: 20%; right: 20%;">
+                    <i class="fas fa-globe" style="font-size: 2.5rem; color: var(--primary-color); opacity: 0.6;"></i>
+                </div>
                 <img src="public/hero-finance.svg" alt="Ilustración financiera">
             </div>
         </div>
-    </section>
-
-    <!-- Sección de Datos de Mercado en tiempo real -->
-    <section id="mercado" class="market-data">
+    </section>    <!-- Sección de Servicios de Bero Capital -->
+    <section id="servicios" class="market-data-creative parallax-section">
+        <div class="parallax-layer" data-speed="0.1" data-direction="1">
+            <svg width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none" style="position: absolute; top: 0; left: 0; opacity: 0.1;">
+                <path d="M0,0 L100,0 L100,20 Q80,40 70,20 Q50,0 30,15 Q10,30 0,10 Z" fill="#ffffff"></path>
+            </svg>
+        </div>
         <div class="container">
-            <h2>Datos de mercado en <span class="highlight">tiempo real</span></h2>
-            <div class="market-widgets">
-                <div class="market-card">
-                    <h3>Principales Índices Globales</h3>
-                    <div class="market-items">
-                        <div class="market-item">
-                            <span class="market-name">S&P 500</span>
-                            <span class="market-value up">4,873.42</span>
-                            <span class="market-change up">+0.78%</span>
-                        </div>
-                        <div class="market-item">
-                            <span class="market-name">NASDAQ</span>
-                            <span class="market-value up">15,989.31</span>
-                            <span class="market-change up">+1.23%</span>
-                        </div>
-                        <div class="market-item">
-                            <span class="market-name">DOW JONES</span>
-                            <span class="market-value down">38,327.65</span>
-                            <span class="market-change down">-0.15%</span>
-                        </div>
-                        <div class="market-item">
-                            <span class="market-name">MERVAL</span>
-                            <span class="market-value up">1,235,421.53</span>
-                            <span class="market-change up">+2.47%</span>
-                        </div>
-                    </div>
+            <h2>Nuestros <span class="highlight" style="color: #fff;">servicios</span></h2>
+            
+            <!-- Servicios principales -->
+            <div class="market-data-grid">
+                <!-- Banca Corporativa -->
+                <div class="glass-card">
+                    <h3>Banca Corporativa</h3>
+                    <ul class="services-list">
+                        <li>
+                            <h4>Cash Management</h4>
+                            <p>Transformamos la gestión de tesorería en una ventaja estratégica, asegurando que cada flujo de capital encuentre su mejor destino.</p>
+                        </li>
+                        <li>
+                            <h4>Eficiencia Fiscal 360</h4>
+                            <p>Minimizamos el impacto fiscal con soluciones a medida que combinan herramientas financieras avanzadas y estrategias impositivas innovadoras.</p>
+                        </li>
+                        <li>
+                            <h4>Cobertura a Medida</h4>
+                            <p>Protegemos tus activos con soluciones avanzadas que integran futuros y opciones en monedas y commodities.</p>
+                        </li>
+                        <li>
+                            <h4>Financiamiento Estratégico</h4>
+                            <p>Te acompañamos en la búsqueda de financiamiento con una visión para tu empresa que va más allá de la banca tradicional.</p>
+                        </li>
+                    </ul>
                 </div>
-                <div class="market-card">
-                    <h3>Tipo de Cambio USD/ARS</h3>
-                    <div class="currency-box">
-                        <div class="currency-main">
-                            <span class="currency-value">962.35</span>
-                            <span class="currency-label">Oficial</span>
-                        </div>
-                        <div class="currency-alt">
-                            <div class="currency-item">
-                                <span class="currency-name">Blue</span>
-                                <span class="currency-alt-value">1,275.00</span>
-                            </div>
-                            <div class="currency-item">
-                                <span class="currency-name">MEP</span>
-                                <span class="currency-alt-value">1,245.75</span>
-                            </div>
-                            <div class="currency-item">
-                                <span class="currency-name">CCL</span>
-                                <span class="currency-alt-value">1,258.80</span>
-                            </div>
-                        </div>
-                    </div>
+                
+                <!-- Banca de Inversión -->
+                <div class="glass-card">
+                    <h3>Banca de Inversión</h3>
+                    <ul class="services-list">
+                        <li>
+                            <h4>Planificación Financiera</h4>
+                            <p>Creamos una ruta estratégica y clara hacia tus metas; desde jubilaciones hasta la educación de tus hijos.</p>
+                        </li>
+                        <li>
+                            <h4>Gestión de Inversiones</h4>
+                            <p>Transformamos tu cartera en un activo potente, combinando activos locales e internacionales para maximizar rendimiento.</p>
+                        </li>
+                        <li>
+                            <h4>Estrategias Fiscales Inteligentes</h4>
+                            <p>Convertimos la planificación fiscal en una ventaja estratégica, maximizando tus ingresos y protegiendo el valor de tu inversión.</p>
+                        </li>
+                        <li>
+                            <h4>Protección Total del Patrimonio</h4>
+                            <p>Evaluamos, identificamos y blindamos tu patrimonio de manera integral, contemplando diversos tipos de riesgos.</p>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <p class="market-disclaimer">Datos actualizados al 22 de mayo de 2025, 10:30 AM (ARG)</p>
-        </div>
-    </section>
-
-    <!-- Sección Portfolio -->
-    <section id="portfolio" class="portfolio">
-        <div class="container">
-            <h2>Nuestro <span class="highlight">portfolio</span></h2>
-            <p class="section-subtitle">Descubre cómo hemos ayudado a nuestros clientes a alcanzar sus objetivos financieros</p>
             
-            <div class="portfolio-grid">
-                <div class="portfolio-item">
-                    <div class="portfolio-image">
-                        <img src="public/project1.jpg" alt="Proyecto de inversión">
-                    </div>
-                    <div class="portfolio-content">
-                        <h3>Optimización de cartera corporativa</h3>
-                        <p>Desarrollamos una estrategia de optimización para diversificar la cartera de inversiones de una empresa multinacional, logrando un aumento del 27% en rendimiento anual.</p>
-                        <a href="#" class="portfolio-link">Ver caso completo <i class="fas fa-arrow-right"></i></a>
+            <div class="cta-container">
+                <a href="https://api.whatsapp.com/send/?phone=%2B5493512101277&text=Hola%2C+tengo+una+pregunta..." class="btn btn-secondary" target="_blank">
+                    <i class="fab fa-whatsapp"></i> Consultanos
+                </a>
+            </div>
+        </div>
+    </section>    <!-- Sección Casos de Éxito con storytelling -->
+    <section id="casos-exito" class="story-portfolio diagonal-section parallax-section" style="background: linear-gradient(120deg, #f8f9fa, #e9ecef);">
+        <div class="parallax-layer" data-speed="0.05" data-direction="1">
+            <div class="geometric-shape" style="top: 15%; right: 5%; width: 250px; height: 250px; opacity: 0.3;"></div>
+        </div>
+        <div class="container">
+            <h2>Casos de <span class="highlight">éxito</span></h2>
+            <p class="section-subtitle">Conoce cómo hemos ayudado a nuestros clientes a transformar su realidad financiera</p>
+            
+            <div class="story-timeline">
+                <div class="timeline-line"></div>
+                
+                <div class="timeline-item scroll-reveal">
+                    <div class="timeline-content">
+                        <h3>Planificación financiera para productores agropecuarios</h3>
+                        <p class="story-challenge">"Necesitaba alinear mi planificación financiera con mi calendario productivo agrícola."</p>
+                        <p>Diseñamos una estrategia integral para ordenar el flujo de fondos, optimizar la carga impositiva y bancaria, e incorporar herramientas como futuros de soja y LECAPs. Además, transformamos la liquidez del campo en nuevas oportunidades de financiamiento.</p>
+                        <p class="story-solution">Solución: Estrategia personalizada con enfoque en el ciclo productivo agropecuario</p>
+                        
+                        <div class="story-metrics">
+                            <div class="story-metric">
+                                <div class="metric-value"><i class="fas fa-check"></i></div>
+                                <div class="metric-label">Optimización fiscal</div>
+                            </div>
+                            <div class="story-metric">
+                                <div class="metric-value"><i class="fas fa-check"></i></div>
+                                <div class="metric-label">Gestión eficiente</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 
-                <div class="portfolio-item">
-                    <div class="portfolio-image">
-                        <img src="public/project2.jpg" alt="Proyecto de inversión">
-                    </div>
-                    <div class="portfolio-content">
-                        <h3>Reestructuración de deuda PyME</h3>
-                        <p>Asesoramos a una empresa mediana en la reestructuración de su deuda, permitiéndole mejorar su calificación crediticia y reducir sus costos financieros en un 32%.</p>
-                        <a href="#" class="portfolio-link">Ver caso completo <i class="fas fa-arrow-right"></i></a>
+                <div class="timeline-item scroll-reveal">
+                    <div class="timeline-content">
+                        <h3>Diversificación de inversiones</h3>
+                        <p class="story-challenge">"Buscaba formas de proteger mi capital frente a la volatilidad del mercado argentino."</p>
+                        <p>Implementamos una estrategia de diversificación con una combinación óptima de instrumentos ajustables por CER, bonos en dólares e instrumentos a tasa fija, proporcionando estabilidad y rendimiento en un contexto desafiante.</p>
+                        <p class="story-solution">Solución: Cartera balanceada con protección contra la inflación y volatilidad cambiaria</p>
+                        
+                        <div class="story-metrics">
+                            <div class="story-metric">
+                                <div class="metric-value"><i class="fas fa-shield-alt"></i></div>
+                                <div class="metric-label">Protección patrimonial</div>
+                            </div>
+                            <div class="story-metric">
+                                <div class="metric-value"><i class="fas fa-chart-line"></i></div>
+                                <div class="metric-label">Rendimiento optimizado</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 
-                <div class="portfolio-item">
-                    <div class="portfolio-image">
-                        <img src="public/project3.jpg" alt="Proyecto de inversión">
-                    </div>
-                    <div class="portfolio-content">
-                        <h3>Estrategia de inversión patrimonial</h3>
-                        <p>Diseñamos un plan de inversión personalizado para un family office, resultando en un crecimiento patrimonial del 18% en un entorno económico volátil.</p>
-                        <a href="#" class="portfolio-link">Ver caso completo <i class="fas fa-arrow-right"></i></a>
+                <div class="timeline-item scroll-reveal">
+                    <div class="timeline-content">
+                        <h3>Optimización de flujos financieros empresariales</h3>
+                        <p class="story-challenge">"Necesitábamos ordenar los números de nuestra empresa y hacer un uso más eficiente de nuestros recursos."</p>
+                        <p>Desarrollamos un sistema integral de Cash Management que transformó la gestión de tesorería en una ventaja estratégica, identificando oportunidades de inversión a corto plazo y mejorando significativamente la eficiencia financiera.</p>
+                        <p class="story-solution">Solución: Implementación de herramientas financieras con enfoque fiscal eficiente</p>
+                        
+                        <div class="story-metrics">
+                            <div class="story-metric">
+                                <div class="metric-value"><i class="fas fa-sync-alt"></i></div>
+                                <div class="metric-label">Optimización de flujos</div>
+                            </div>
+                            <div class="story-metric">
+                                <div class="metric-value"><i class="fas fa-hand-holding-usd"></i></div>
+                                <div class="metric-label">Eficiencia impositiva</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- Sección Clientes -->
-    <section id="clientes" class="clients">
+    </section>    <!-- Sección Partners -->
+    <section id="partners" class="clients parallax-section">
+        <div class="parallax-layer" data-speed="0.1" data-direction="-1">
+            <svg viewBox="0 0 100 100" preserveAspectRatio="none" style="position: absolute; width: 100%; height: 100px; top: 0; left: 0; opacity: 0.1;">
+                <path d="M0,0 L100,0 L100,20 Q80,60 50,30 Q20,0 0,20 Z" fill="#2c74b3"></path>
+            </svg>
+        </div>
         <div class="container">
-            <h2>Nuestros <span class="highlight">clientes</span></h2>
-            <p class="section-subtitle">Empresas y organizaciones que confían en nosotros</p>
-            
-            <div class="clients-logo-grid">
-                <div class="client-logo"><img src="public/client1.svg" alt="Logo cliente"></div>
-                <div class="client-logo"><img src="public/client2.svg" alt="Logo cliente"></div>
-                <div class="client-logo"><img src="public/client3.svg" alt="Logo cliente"></div>
-                <div class="client-logo"><img src="public/client4.svg" alt="Logo cliente"></div>
-                <div class="client-logo"><img src="public/client5.svg" alt="Logo cliente"></div>
-                <div class="client-logo"><img src="public/client6.svg" alt="Logo cliente"></div>
+            <h2>Nuestros <span class="highlight">partners</span></h2>
+            <p class="section-subtitle">Aliados estratégicos que comparten nuestra visión de innovación, transparencia y eficiencia</p>
+              <div class="clients-hexagrid">
+                <div class="hexagon-item scroll-reveal" style="background-color: #ffffff;">
+                    <div class="hexagon-content">
+                        <img src="https://static.wixstatic.com/media/9ff8ee_5404268f31fe4ce39370200bf7a2bc9b~mv2.png" alt="S&C Logo" style="max-width: 85%; height: auto;">
+                    </div>
+                </div>
+                <div class="hexagon-item scroll-reveal" style="background-color: #ffffff;">
+                    <div class="hexagon-content">
+                        <img src="https://static.wixstatic.com/media/9ff8ee_aa4badf84c6f4f67a4df1befa8cdf7ba~mv2.png" alt="Inviu Logo" style="max-width: 85%; height: auto;">
+                    </div>
+                </div>
             </div>
             
-            <div class="testimonials">
-                <div class="testimonial">
+            <div class="testimonials perspective-container">
+                <div class="testimonial scroll-reveal glass-card" style="transform: perspective(1000px) rotateY(-5deg);">
                     <div class="testimonial-content">
                         <i class="fas fa-quote-left"></i>
-                        <p>FinancePro transformó completamente nuestra estrategia de inversiones. Su enfoque innovador y análisis detallado nos permitió superar nuestras metas financieras en un tiempo récord.</p>
+                        <p>"Son profesionales con amplios conocimientos no solo en herramientas financieras, sino que considero que su mayor valor agregado es entender cómo es el modo más conveniente de coordinar dichas inversiones."</p>
                     </div>
                     <div class="testimonial-author">
                         <img src="public/testimonial1.jpg" alt="Foto cliente">
                         <div>
-                            <h4>Laura Méndez</h4>
-                            <span>CEO, TechGlobal SA</span>
+                            <h4>Gastón</h4>
+                            <span>Cliente Corporativo</span>
                         </div>
                     </div>
                 </div>
                 
-                <div class="testimonial">
+                <div class="testimonial scroll-reveal glass-card" style="transform: perspective(1000px) rotateY(5deg);">
                     <div class="testimonial-content">
                         <i class="fas fa-quote-left"></i>
-                        <p>El equipo de FinancePro demostró un conocimiento excepcional del mercado argentino y sus complejidades. Su asesoramiento nos ha permitido navegar con éxito en un entorno económico desafiante.</p>
+                        <p>"Bero Capital transformó nuestra estrategia financiera. Su asesoramiento personalizado nos ayudó a ordenar nuestros flujos operativos y encontrar oportunidades donde no las veíamos."</p>
                     </div>
                     <div class="testimonial-author">
                         <img src="public/testimonial2.jpg" alt="Foto cliente">
                         <div>
-                            <h4>Martín Rodríguez</h4>
-                            <span>Director Financiero, Grupo Inversor</span>
+                            <h4>Gustavo</h4>
+                            <span>Productor Agropecuario</span>
                         </div>
                     </div>
                 </div>
             </div>
+            
+            <div class="cta-container" style="text-align: center; margin-top: 40px;">
+                <a href="https://simulador-berocapital.com/" class="btn btn-primary" target="_blank">
+                    ¡Probá nuestra Calculadora!
+                </a>
+            </div>
         </div>
-    </section>
-
-    <!-- Sección Nosotros -->
+    </section>    <!-- Sección Quiénes Somos -->
     <section id="nosotros" class="about">
         <div class="container">
             <div class="about-content">
                 <div class="about-text">
-                    <h2>Sobre <span class="highlight">nosotros</span></h2>
-                    <p class="section-subtitle">Tu socio financiero de confianza desde 2015</p>
+                    <h2>Quiénes <span class="highlight">somos</span></h2>
+                    <p class="section-subtitle">Mucho más que una firma financiera; somos arquitectos del futuro</p>
                     
-                    <p>En FinancePro, combinamos experiencia financiera con innovación tecnológica para ofrecer soluciones que maximizan el potencial de cada inversión. Nuestro equipo de expertos cuenta con más de 50 años de experiencia acumulada en mercados nacionales e internacionales.</p>
+                    <p>En BERO Capital, nos convertimos en verdaderos aliados estratégicos, acompañándote en cada paso hacia tus metas financieras. Somos un equipo que combina excelencia, cercanía y audacia, con el propósito de diseñar estrategias personalizadas que no solo impulsen tus metas financieras, sino que las eleven a niveles que creías imposibles.</p>
                     
-                    <p>Nuestra misión es proporcionar asesoramiento financiero personalizado, transparente y efectivo, adaptado a las necesidades específicas de cada cliente, ya sea una gran corporación o un inversor individual.</p>
+                    <p>La excelencia no es un objetivo, es nuestra forma de trabajar, porque juntos no solo alcanzamos metas, forjamos el mañana.</p>
                     
                     <div class="about-stats">
                         <div class="stat-item">
-                            <span class="stat-number">10+</span>
-                            <span class="stat-label">Años de experiencia</span>
+                            <span class="stat-number"><i class="fas fa-handshake"></i></span>
+                            <span class="stat-label">Compromiso</span>
                         </div>
                         <div class="stat-item">
-                            <span class="stat-number">200+</span>
-                            <span class="stat-label">Clientes satisfechos</span>
+                            <span class="stat-number"><i class="fas fa-shield-alt"></i></span>
+                            <span class="stat-label">Confianza</span>
                         </div>
                         <div class="stat-item">
-                            <span class="stat-number">$1.5B</span>
-                            <span class="stat-label">Activos gestionados</span>
+                            <span class="stat-number"><i class="fas fa-chart-line"></i></span>
+                            <span class="stat-label">Innovación</span>
                         </div>
                     </div>
                 </div>
                 
                 <div class="about-image">
-                    <img src="public/about-team.jpg" alt="Equipo FinancePro">
-                </div>
-            </div>
-            
-            <div class="services">
-                <h3>Nuestros servicios</h3>
-                <div class="services-grid">
-                    <div class="service-card">
-                        <i class="fas fa-chart-line"></i>
-                        <h4>Asesoramiento de inversiones</h4>
-                        <p>Estrategias personalizadas para maximizar rendimientos y minimizar riesgos en diferentes horizontes temporales.</p>
-                    </div>
-                    
-                    <div class="service-card">
-                        <i class="fas fa-building"></i>
-                        <h4>Finanzas corporativas</h4>
-                        <p>Soluciones para optimizar la estructura financiera de su empresa, desde financiamiento hasta reestructuración.</p>
-                    </div>
-                    
-                    <div class="service-card">
-                        <i class="fas fa-globe"></i>
-                        <h4>Inversiones internacionales</h4>
-                        <p>Acceso a oportunidades de inversión global con estrategias adaptadas al perfil de cada inversor.</p>
-                    </div>
-                    
-                    <div class="service-card">
-                        <i class="fas fa-shield-alt"></i>
-                        <h4>Gestión de riesgos</h4>
-                        <p>Identificación, análisis y mitigación de riesgos financieros para proteger su patrimonio e inversiones.</p>
-                    </div>
+                    <img src="public/about-team.jpg" alt="Equipo Bero Capital">
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- Sección Contacto -->
+      <!-- Team Section -->
+    <section id="equipo" class="team">
+        <div class="team-background-shape shape-1"></div>
+        <div class="team-background-shape shape-2"></div>
+        <div class="container">
+            <h2>Nuestro <span class="highlight">Equipo</span></h2>
+            <p class="section-subtitle">Profesionales expertos listos para guiarte en cada decisión financiera</p>
+            
+            <div class="team-grid">                <div class="team-card">
+                    <div class="team-photo">
+                        <img src="https://static.wixstatic.com/media/9ff8ee_204c37be637d45bbb77331d2968283aa~mv2.png/v1/fill/w_408,h_203,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Gonzalo%20Celis_HEIC.png" alt="Gonzalo Celis">
+                    </div>
+                    <div class="team-content">
+                        <span class="credentials">AP Nº 1.161</span>
+                        <h4>Gonzalo Celis</h4>
+                        <span class="role">Director Banca Corporativa</span>
+                        <p>Especialista en gestión integral de patrimonios para Pymes y grandes empresas de diversos sectores.</p>
+                        <div class="team-social">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+                  <div class="team-card">
+                    <div class="team-photo">
+                        <img src="https://static.wixstatic.com/media/9ff8ee_b1e13f5a109341d6a91e476ca681d342~mv2.png/v1/fill/w_408,h_203,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Facundo%20Gomez%20Funes_HEIC.png" alt="Facundo Gomez Funes">
+                    </div>
+                    <div class="team-content">
+                        <span class="credentials">AP Nº 1.811</span>
+                        <h4>Facundo Gomez Funes</h4>
+                        <span class="role">Director, Banca de Inversión</span>
+                        <p>Especialista en la planificación financiera y la gestión de inversiones para personas físicas de alto patrimonio y family office.</p>
+                        <div class="team-social">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+                  <div class="team-card">
+                    <div class="team-photo">
+                        <img src="https://static.wixstatic.com/media/9ff8ee_974cd4a578b945818d336d1b1de4ba05~mv2.jpg/v1/fill/w_408,h_203,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Matias%20Manero_edited_edited.jpg" alt="Matías Manero">
+                    </div>
+                    <div class="team-content">
+                        <span class="credentials">AP Nº 2.385</span>
+                        <h4>Matias Manero</h4>
+                        <span class="role">Director, Portfolio Manager</span>
+                        <p>Desarrolla estrategias para optimizar carteras e inversiones de clientes con enfoque en renta variable y derivados financieros.</p>
+                        <div class="team-social">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+                  <div class="team-card">
+                    <div class="team-photo">
+                        <img src="https://static.wixstatic.com/media/9ff8ee_434c360395f2465c80748c64dfd01240~mv2.png/v1/crop/x_0,y_1164,w_3024,h_1524/fill/w_408,h_203,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Guillermo%20Gardella_HEIC.png" alt="Guillermo Gardella">
+                    </div>
+                    <div class="team-content">
+                        <span class="credentials">AP Nº 2.394</span>
+                        <h4>Guillermo Gardella</h4>
+                        <span class="role">Director Banca Corporativa</span>
+                        <p>Especialista en gestión de patrimonios de Pymes y Grandes empresas. Acompañamiento en financiamiento e implementación de estrategias.</p>
+                        <div class="team-social">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+                  <div class="team-card">
+                    <div class="team-photo">
+                        <img src="https://static.wixstatic.com/media/9ff8ee_86cd9b8cf86846199593f33ab96029d3~mv2.jpg/v1/fill/w_408,h_203,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Agustin%20Bruera_edited.jpg" alt="Agustín Bruera">
+                    </div>
+                    <div class="team-content">
+                        <h4>Agustin Bruera</h4>
+                        <span class="role">Director, Banca Corporativa Agro</span>
+                        <p>Especialista en la gestión integral de patrimonios para PyMES y grandes empresas del sector agropecuario.</p>
+                        <div class="team-social">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+                  <div class="team-card">
+                    <div class="team-photo">
+                        <img src="https://static.wixstatic.com/media/9ff8ee_88f03fc101a14f94b678fb3b5b79be19~mv2.jpg/v1/fill/w_408,h_203,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Nicolas%20Cerioni_edited_edited_edited.jpg" alt="Nicolás Cerioni">
+                    </div>
+                    <div class="team-content">
+                        <h4>Nicolás Cerioni</h4>
+                        <span class="role">Banca de Inversión y Corporativa</span>
+                        <p>Referente en Río Cuarto y San Luis, brindando soluciones estratégicas a pymes y grandes empresas optimizando los flujos operativos.</p>
+                        <div class="team-social">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+                  <div class="team-card">
+                    <div class="team-photo">
+                        <img src="https://static.wixstatic.com/media/9ff8ee_da7e6098ea1a41b98e24ebd91aefe698~mv2.png/v1/fill/w_408,h_203,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Ramiro%20Olmedo_HEIC.png" alt="Ramiro Olmedo">
+                    </div>
+                    <div class="team-content">
+                        <h4>Ramiro Olmedo</h4>
+                        <span class="role">Director, Trading y sistemas algorítmicos</span>
+                        <p>Especialista en análisis técnico y desarrollo de sistemas algorítmicos que combinan análisis y optimización de tecnologías avanzadas.</p>
+                        <div class="team-social">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <p class="regulatory-notice" style="text-align: center; margin-top: 30px; color: rgba(255, 255, 255, 0.7); font-style: italic;">
+                Bero Capital es operada por profesionales inscriptos en Comisión Nacional de Valores (CNV).
+            </p>
+        </div>
+    </section><!-- Sección Contacto -->
     <section id="contacto" class="contact">
         <div class="container">
             <h2>Contáctanos</h2>
-            <p class="section-subtitle">Estamos listos para ayudarte con tus objetivos financieros</p>
+            <p class="section-subtitle">Estamos listos para ayudarte a alcanzar tus objetivos financieros</p>
             
             <div class="contact-container">
                 <div class="contact-info">
@@ -283,7 +430,7 @@
                         <i class="fas fa-map-marker-alt"></i>
                         <div>
                             <h4>Dirección</h4>
-                            <p>Av. Corrientes 1234, Piso 12<br>Ciudad Autónoma de Buenos Aires</p>
+                            <p>Ignacio Garzón 3284<br>Barrio Jardín, Córdoba, Argentina</p>
                         </div>
                     </div>
                     
@@ -291,7 +438,7 @@
                         <i class="fas fa-envelope"></i>
                         <div>
                             <h4>Email</h4>
-                            <p>info@financepro.com.ar<br>soporte@financepro.com.ar</p>
+                            <p>info@berocapital.com</p>
                         </div>
                     </div>
                     
@@ -299,15 +446,19 @@
                         <i class="fas fa-phone-alt"></i>
                         <div>
                             <h4>Teléfono</h4>
-                            <p>+54 11 4567-8900<br>+54 11 4567-8901</p>
+                            <p>+54 9 351 210-1277</p>
                         </div>
                     </div>
                     
                     <div class="social-links">
-                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/company/bero-capital/" class="social-link" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/berocapitalok/" class="social-link" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    
+                    <div class="cta-container" style="margin-top: 20px;">
+                        <a href="https://api.whatsapp.com/send/?phone=%2B5493512101277&text=Hola%2C+tengo+una+pregunta..." class="btn btn-primary" target="_blank" style="background-color: #25D366; border-color: #25D366;">
+                            <i class="fab fa-whatsapp"></i> Contactar por WhatsApp
+                        </a>
                     </div>
                 </div>
                 
@@ -338,25 +489,22 @@
                 </div>
             </div>
         </div>
-    </section>
-
-    <footer class="footer">
+    </section>    <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-logo">
-                    <a href="#"><span class="highlight">Finance</span>Pro</a>
-                    <p>Soluciones financieras inteligentes para un futuro próspero</p>
+                    <a href="#"><span class="highlight">Bero</span> Capital</a>
+                    <p>Asesoramiento personalizado que marca la diferencia</p>
                 </div>
                 
                 <div class="footer-links">
-                    <div class="footer-column">
-                        <h4>Enlaces rápidos</h4>
+                    <div class="footer-column">                        <h4>Enlaces rápidos</h4>
                         <ul>
                             <li><a href="#inicio">Inicio</a></li>
-                            <li><a href="#mercado">Mercado</a></li>
-                            <li><a href="#portfolio">Portfolio</a></li>
-                            <li><a href="#clientes">Clientes</a></li>
-                            <li><a href="#nosotros">Nosotros</a></li>
+                            <li><a href="#servicios">Servicios</a></li>                            <li><a href="#casos-exito">Casos de Éxito</a></li>
+                            <li><a href="#partners">Partners</a></li>
+                            <li><a href="#nosotros">Quiénes Somos</a></li>
+                            <li><a href="#equipo">Equipo</a></li>
                             <li><a href="#contacto">Contacto</a></li>
                         </ul>
                     </div>
@@ -364,30 +512,29 @@
                     <div class="footer-column">
                         <h4>Servicios</h4>
                         <ul>
-                            <li><a href="#">Asesoramiento de inversiones</a></li>
-                            <li><a href="#">Finanzas corporativas</a></li>
-                            <li><a href="#">Inversiones internacionales</a></li>
-                            <li><a href="#">Gestión de riesgos</a></li>
+                            <li><a href="#servicios">Banca Corporativa</a></li>
+                            <li><a href="#servicios">Banca de Inversión</a></li>
+                            <li><a href="#servicios">Cash Management</a></li>
+                            <li><a href="#servicios">Planificación Financiera</a></li>
                         </ul>
                     </div>
                     
                     <div class="footer-column">
-                        <h4>Legal</h4>
+                        <h4>Regulación</h4>
                         <ul>
+                            <li><a href="#">Operamos bajo CNV</a></li>
                             <li><a href="#">Términos y condiciones</a></li>
                             <li><a href="#">Política de privacidad</a></li>
-                            <li><a href="#">Aviso legal</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
             
             <div class="footer-bottom">
-                <p>&copy; 2025 FinancePro. Todos los derechos reservados.</p>
+                <p>&copy; 2025 Bero Capital. Todos los derechos reservados.</p>
             </div>
-        </div>
-    </footer>
-
-    <script src="js/script.js"></script>
+        </div>    </footer><script src="js/script.js"></script>
+    <script src="js/parallax.js"></script>
+    <script src="js/team-interaction.js"></script>
 </body>
 </html>

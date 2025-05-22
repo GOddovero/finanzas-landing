@@ -1,0 +1,74 @@
+/* Estilos adicionales para Bero Capital */
+
+/* Estilos para la lista de servicios */
+.services-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.services-list li {
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.services-list li:last-child {
+    border-bottom: none;
+}
+
+.services-list h4 {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.services-list p {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.5;
+}
+
+/* Contenedor de CTA */
+.cta-container {
+    margin-top: 30px;
+    text-align: center;
+}
+
+/* Estilo para la notificación regulatoria */
+.regulatory-notice {
+    font-size: 0.9rem;
+    color: var(--dark-gray);
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.03);
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+/* Mejoras a las tarjetas de servicio */
+.service-card {
+    transition: var(--transition);
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Ajustes para la versión móvil */
+@media (max-width: 768px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .market-data-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .cta-container .btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
